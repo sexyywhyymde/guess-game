@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game guess</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="content">
+    <div>
+      <h1>Игра угадай число</h1>
+      <p>Задайте число от 1 до 100 и угадайте</p>
+
+      <input id="guess" type="number" />
+      <button id="check">Угадать</button>
+
+      <p id="message"></p>
+    </div>
+    <script>
+        const inputGuess=document.getElementById("guess")
+        const buttonCheck=document.getElementById("check")
+
+        inputGuess.addEventListener("input",()=>{
+            console.log("Изменился инпут")
+        })
+        
+        buttonCheck.addEventListener("click",()=>{
+            console.log(inputGuess.value)
+        })
+    </script>
+  </body>
+</html>
