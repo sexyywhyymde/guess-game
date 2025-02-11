@@ -3,13 +3,77 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgb(191, 190, 190);
 }
 
+
+
 .content {
+ background-color: rgb(255, 255, 255);
+ padding: 20px;
+ border-radius: 25px;
+ box-shadow: 3px 4px 25px rgba(93, 216, 241, 0.4)
+}
+
+h1{
+ color: rgb(0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+p{
+  color: rgb(106, 242, 242);
+  font-size: 20px;
+  font-style: oblique;
+}
+
+input{
+  width: 120px;
+  padding: 7px;
+  font-size: 16px;
+  border-radius: 5px;
+  
+}
+
+
+input:focus{
+  border-color: aqua;
+  outline: none;
+  
+}
+
+button{
+  padding: 12px 25px  ;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.8s;
+}
+
+.centered{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+#check{
+  background-color: black;
+  color: white;
+}
+
+#check:hover{
+  background-color: cyan;
+}
+
+#check:active{
+  background-color: blueviolet;
+}
+
+#check[disabled]{
+  background-color: #ccc;
 }
 
 .correct {
@@ -22,4 +86,9 @@ body {
 
 .warning {
     color: coral;
+}
+
+.fail{
+  color: crimson;
+  text-transform: uppercase;
 }

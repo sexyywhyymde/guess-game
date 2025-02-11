@@ -6,18 +6,33 @@
     <title>Game guess</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="content">
-    <div>
-      <h1>Игра угадай число</h1>
-      <p>Задайте число от 1 до 100 и угадайте</p>
+  <body class="centered">
+    <div class="content centered">
+      <div>
+        <h1>Игра угадай число</h1>
+        <p>Задайте число от 1 до 100 и угадайте</p>
 
-      <input id="guess" type="number" />
-      <button id="check">Угадать</button>
+        <div>
+          <input id="guess" type="number" />
+          <button id="check">Угадать</button>
+          <button id="restart">Новая игра</button>
+        </div>
 
-      <p id="message"></p>
+        <p id="message"></p>
+        <span
+          id="attempts"
+          style="
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: large;
+            color: white;
+          "
+          >0</span
+        >
+      </div>
     </div>
-    <script src="./script.js">
-      
-    </script>
+
+    <script src="./script.js"></script>
   </body>
 </html>
