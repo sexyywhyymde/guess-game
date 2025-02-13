@@ -17,15 +17,19 @@ body {
 
 h1{
  color: rgb(0, 0, 0);
-  -webkit-text-stroke-width: 1px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+  background: linear-gradient(220deg,#6ccee4 25%,rgb(141, 6, 204) 50%, rgb(4, 188, 121) 100%,#dd15d0 100% );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
 }
 
-p{
-  color: rgb(106, 242, 242);
+.title{
+  color: rgb(0, 0, 0);
   font-size: 20px;
-  font-style: oblique;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  
 }
 
 input{
@@ -38,7 +42,7 @@ input{
 
 
 input:focus{
-  border-color: aqua;
+  border-color: rgb(8, 61, 89);
   outline: none;
   
 }
@@ -49,7 +53,7 @@ button{
   border: none;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.8s;
+  transition: background-color 1.8s;
 }
 
 .centered{
@@ -60,20 +64,24 @@ button{
 }
 
 #check{
-  background-color: black;
-  color: white;
+  background-color: rgb(2, 42, 51);
+  color: rgb(254, 254, 254);
 }
 
 #check:hover{
-  background-color: cyan;
+  background-color: rgb(4, 44, 55);
 }
 
 #check:active{
-  background-color: blueviolet;
+  background-color: rgb(9, 49, 65);
 }
 
 #check[disabled]{
-  background-color: #ccc;
+  background-color: #0a425a;
+}
+
+#messege{
+  font-style: inherit;
 }
 
 .correct {
