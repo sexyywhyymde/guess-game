@@ -6,7 +6,7 @@ const restartButton = document.getElementById("restart");
 
 let secretNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 0;
-const maxAttempts = 2;
+const maxAttempts = 10;
 
 attemptsOutput.textContent = maxAttempts;
 
